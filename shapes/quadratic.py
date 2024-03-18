@@ -16,7 +16,7 @@ b = 2
 c = 3
 
 # repeat parameters to user
-print(f"a={a}, b={b}, c={c}")
+print("a={a}, b={b}, c={c}".format(a=a,b=b,c=c))
 
 # get parts of formula
 b_squared = b*b

@@ -11,14 +11,14 @@ convert_to_radians = False
 value = 30
 
 if convert_to_radians == True:
-    print(f"attempting to convert {value} degrees to radians")
+    print("attempting to convert {value} degrees to radians".format(value=value))
     numerator = value * pi
     denominator = 180
     total = numerator / denominator
 else:
-    print(f"attempting to convert {value} radians to degrees")
+    print("attempting to convert {value} radians to degrees".format(value=value))
     numerator = value * 180
     denominator = pi
     total = numerator / denominator
 
-print(f"got {total}")
+print("got {total}".format(total=total))

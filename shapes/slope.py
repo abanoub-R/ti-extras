@@ -18,4 +18,5 @@ offset_y = y2 - y1
 offset_x = x2 - x1
 
 # get slope and return to user
-print(f"slope of ({x1},{y1}) and ({x2},{y2}) is {offset_y/offset_x}")
+print("slope of ({x1},{y1}) and ({x2},{y2}) is {offset_y/offset_x}"
+    .format(x1=x1,y1=y1,x2=x2,y2=y2))

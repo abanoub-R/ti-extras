@@ -15,11 +15,14 @@ b = 4
 c = "unknown"
 
 # announce known variables
-print(f"a={a}, b={b}, c={c}")
+print("a={a}, b={b}, c={c}".format(a=a,b=b,c=c))
 
 if a == "unknown":
-    print(f"a is {sqrt(c*c - b*b)}")
+    operation = sqrt(c*c - b*b)
+    print("a is {1}".format(operation))
 elif b == "unknown":
-    print(f"b is {sqrt(c*c - a*a)}")
+    operation = sqrt(c*c - a*a)
+    print("b is {1}".format(operation))
 elif c == "unknown":
-    print(f"c is {sqrt(a*a + b*b)}")
+    operation = sqrt(a*a + b*b)
+    print(f"c is {1}".format(operation))
